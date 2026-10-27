@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyage Travel</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+
+    <div class="topbar">
+        <span>Agent Login</span>
+        <span>Customer Login</span>
+        <span>Not a Member? Register</span>
+        <span>Call Us Now: 815-123-4567</span>
+    </div>
+
+    <header>
+        <a href="#" class="logo">V<span>O</span>YAGE</a>
+
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+        <nav class="navigation">
+            <a class="active" href="#">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#holiday-types">Cruises</a>
+            <a href="#offers">Specials</a>
+            <a href="#holiday-types">Holidays</a>
+            <a href="#footer">Blog</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <button class="arrow previous" aria-label="Previous">‹</button>
+
+        <div class="hero-content">
+            <h1 id="hero-title">TO TRAVEL IS TO LIVE</h1>
+            <p id="hero-subtitle">
+                You Don't Need Magic to Disappear.
+                All you need is a destination.
+            </p>
+            <a href="#holiday-search" class="btn">SHOW ON THE MAP</a>
+            <a href="#destinations" class="btn outline">MORE INFO</a>
+        </div>
+
+        <button class="arrow next" aria-label="Next">›</button>
+    </section>
+
+    <section class="search-bar" id="holiday-search">
+        <h3>FIND YOUR<br>HOLIDAYS</h3>
+
+        <form id="trip-form">
+            <label for="destination">Where</label>
+            <input id="destination" list="places"
+                   placeholder="Destination" required>
+
+            <datalist id="places">
+                <option value="Dubai"></option>
+                <option value="Paris"></option>
+                <option value="Vietnam"></option>
+                <option value="New York"></option>
+                <option value="Hong Kong"></option>
+            </datalist>
+
+            <label for="travel-date">When</label>
+            <input id="travel-date" type="date" required>
+
+            <button class="btn" type="submit">Search</button>
+        </form>
+
+        <p id="search-message"></p>
+    </section>
+
+    <section class="section" id="offers">
+        <div class="section-title">
+            <h2>SPECIAL OFFERS</h2>
+            <p>Best holiday packages where people love to stay!</p>
+        </div>
+
+        <div class="destination-grid" id="destinations">
+
+            <article class="destination-card">
+                <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=500&q=80" alt="New York">
+                <h4>Statue of Liberty - USA</h4>
+                <p>New Destination!</p>
+            </article>
+
+            <article class="destination-card">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=500&q=80" alt="Paris">
+                <h4>Spectacular Paris</h4>
+                <p>New Destination!</p>
+            </article>
+
+            <article class="destination-card">
+                <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=500&q=80" alt="Tropical destination">
+                <h4>Hong Kong & Macau</h4>
+                <p>Enjoy the view!</p>
+            </article>
+
+            <article class="destination-card">
+                <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=500&q=80" alt="European city">
+                <h4>Vietnam Highlights</h4>
+                <p>New Destination!</p>
+            </article>
+
+            <article class="destination-card">
+                <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=500&q=80" alt="Desert">
+                <h4>Spectacular Seychelles</h4>
+                <p>New Destination!</p>
+            </article>
+
+            <article class="destination-card">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=500&q=80" alt="Dubai skyline">
+                <h4>Dubai</h4>
+                <p>New Destination!</p>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="holiday-types" id="holiday-types">
+        <div class="section-title">
+            <h2>HOLIDAYS TYPE</h2>
+            <p>Get excited about your dream to travel the world</p>
+        </div>
+
+        <div class="type-list">
+            <button class="type-item"><span>♜</span>Cruise</button>
+            <button class="type-item"><span>▦</span>City Breaks</button>
+            <button class="type-item"><span>♥</span>Honeymoon</button>
+            <button class="type-item"><span>✧</span>Adventure</button>
+            <button class="type-item"><span>♧</span>Safari</button>
+            <button class="type-item"><span>〰</span>Beach</button>
+        </div>
+
+        <p id="type-message">
+            Honeymoon — make memories that last a lifetime.
+        </p>
+    </section>
+
+    <section class="section">
+        <div class="section-title">
+            <h2>HAPPY CLIENTS</h2>
+            <p>What customers say about us and why they love our services!</p>
+        </div>
+
+        <div class="testimonial-grid">
+            <article class="testimonial">
+                <p>A wonderful trip from start to finish.</p>
+                <strong>Client Name</strong>
+            </article>
+
+            <article class="testimonial">
+                <p>Beautiful destinations and friendly service.</p>
+                <strong>Client Name</strong>
+            </article>
+
+            <article class="testimonial">
+                <p>Everything was perfectly organised. Amazing experience!</p>
+                <strong>Client Name</strong>
+            </article>
+
+            <article class="testimonial">
+                <p>Great experience and wonderful memories.</p>
+                <strong>Client Name</strong>
+            </article>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-grid">
+            <div>
+                <h3>Newsletter</h3>
+                <p>Get the latest travel news and holiday offers.</p>
+
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your email" required>
+                    <button class="btn" type="submit">GO</button>
+                </form>
+
+                <p id="newsletter-message"></p>
+            </div>
+
+            <div>
+                <h3>Latest News</h3>
+                <p>Discover beautiful destinations.</p>
+                <p>Explore your next adventure.</p>
+            </div>
+
+            <div>
+                <h3>Tags</h3>
+                <div class="tags">
+                    <span>Adventure</span>
+                    <span>Travel</span>
+                    <span>Holiday</span>
+                    <span>Packages</span>
+                </div>
+            </div>
+
+            <div>
+                <h3>Address</h3>
+                <p>Travel Agency</p>
+                <p>Kochi, Kerala, India</p>
+                <p>hello@voyage.example</p>
+                <p>Facebook | Twitter | Instagram</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Home | Destinations | Cruises | Specials | Holidays | Blog</p>
+            <p>Copyright © Voyage. All rights reserved.</p>
+            <a href="#" class="back-top">↑</a>
+        </div>
+    </footer>
+
+    <script src="travel.js"></script>
+</body>
+</html>
